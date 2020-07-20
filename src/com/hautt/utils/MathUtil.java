@@ -16,6 +16,11 @@ public class MathUtil {
     // tính n! -> tăng kết quả rất nhanh, sẽ tràn kiểu int sớm, do int chỉ tối đa 2tỉ 1, do đó xài long an toàn hơn
     // tuy thế 15! đã là to lắm, mình hạn chế chỉ tính 15! đổ lại
     public static long computeFactorial(int n) {
+
+        // hàm sẽ ném vè ngoại lệ nếu bạn đưa n vào cà chớn
+        if (n < 0 || n > 15) {
+            throw new IllegalArgumentException("Invalid argument. n must be >= 0 and <= 15");
+        }
         long result = 1;
         for (int i = 1; i <= n; i++) {
             result *= i;
