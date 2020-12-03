@@ -1,7 +1,7 @@
 # Welcome to Hau TR repository
 This repository contains a simple Java application used for demonstration of CI - Continuous Intergration process, a part of Introduction to Software Engineering course at FPT University, HCM Campus
 
-## You will find in this repo:
+## You will find in this rerepository:
 * MathUtil class: hold all of our own math methods
 * Test class: demonstrate TDD and Unit Testing using JUnit
 * .gitignore
